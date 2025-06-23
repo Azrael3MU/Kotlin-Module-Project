@@ -14,7 +14,7 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/arrow_back_img"
+            android:src="@drawable/arrow_back_img"
             android:layout_marginRight="12dp"/>
         <TextView
             android:layout_width="wrap_content"
@@ -65,7 +65,7 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/share_img"
+                android:src="@drawable/share_img"
                 android:layout_gravity="center"/>
         </LinearLayout>
         <LinearLayout
@@ -85,7 +85,7 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/support_img"
+                android:src="@drawable/support_img"
                 android:layout_gravity="center"/>
         </LinearLayout>
         <LinearLayout
@@ -105,7 +105,7 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/arrow_forvard_img"
+                android:src="@drawable/arrow_forvard_img"
                 android:layout_gravity="center"/>
         </LinearLayout>
     </LinearLayout>

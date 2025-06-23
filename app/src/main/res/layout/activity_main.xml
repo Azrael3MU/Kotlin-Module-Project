@@ -1,19 +1,80 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#3772e7"
+    android:padding="20dp">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:text="@string/app_name"
+            android:textColor="#ffffff"
+            android:textSize="22sp"
+            android:fontFamily="@font/yp_d_regular"/>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <Button
+            android:background="@drawable/rounded_button"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            app:icon="@drawable/search_img"
+            app:iconTint="@color/black"
+            app:iconGravity="textStart"
+            android:backgroundTint="#ffffff"
+            android:text="Поиск"
+            android:textColor="#1A1B22"
+            android:fontFamily="@font/yp_d_regular"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:background="@drawable/rounded_button"
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            app:icon="@drawable/library_img"
+            app:iconTint="@color/black"
+            app:iconGravity="textStart"
+            android:backgroundTint="#ffffff"
+            android:text="Медиатека"
+            android:fontFamily="@font/yp_d_regular"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:textColor="#1A1B22" />
+        <Button
+            android:background="@drawable/rounded_button"
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            app:icon="@drawable/settings_img"
+            app:iconTint="@color/black"
+            app:iconGravity="textStart"
+            android:backgroundTint="#ffffff"
+            android:text="Настройки"
+            android:fontFamily="@font/yp_d_regular"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:textColor="#1A1B22" />
+    </LinearLayout>
+
+</LinearLayout>
